@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="popup-container hidden">
+      <div class="popup">
+        <h2>Times Up!</h2>
+        <h3 class="speed"></h3>
+        <div>
+          <h3>Words per Minute</h3>
+          <div class="wpm-f stat">0</div>
+        </div>
+        <div>
+          <h3>Characters per Minute</h3>
+          <div class="cpm-f stat">0</div>
+        </div>
+        <div>
+          <h3>Accuracy</h3>
+          <div class="acc-f stat">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-container">
+      <div>
+        <h3>Words per Minute</h3>
+        <div class="wpm stat">0</div>
+      </div>
+      <div>
+        <h3>Characters per Minute</h3>
+        <div class="cpm stat">0</div>
+      </div>
+      <div>
+        <h3>Accuracy</h3>
+        <div class="acc stat">0</div>
+      </div>
+    </div>
+    <div class="time">
+      <div class="timer">Time: 60</div>
+      <button class="start-button">Start Timer</button>
+    </div>
+
+    <div class="word-container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

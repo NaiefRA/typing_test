@@ -1,0 +1,119 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: lightgray;
+  background-color: black;
+}
+
+h2 {
+  padding: 0px;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.word-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.word {
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.letter {
+  padding: 0.05rem;
+}
+
+.correct {
+  color: rgb(109, 242, 109);
+}
+
+.wrong {
+  color: rgb(238, 83, 83);
+}
+
+.extra {
+  color: darkred;
+}
+
+.current {
+  border-bottom: 2px solid rgb(0, 238, 255);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 40px;
+}
+
+.start-button {
+  background-color: blue;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: lightgray;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+}
+
+.start-button:active {
+  transform: translateY(0);
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  padding: 20px;
+}
+
+.wpm,
+.cpm,
+.acc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  margin: 20px;
+}
+
+.popup-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+}
+
+.popup {
+  font-size: 2rem;
+  background: rgb(80, 78, 78);
+  padding: 5rem;
+  color: lightgray;
+  text-align: center;
+  min-width: 300px;
+  animation: pop-in 0.3s ease;
+  border-radius: 20px;
+}
+.hidden {
+  display: none;
+}
+.speed {
+  font-size: 2rem;
+}
